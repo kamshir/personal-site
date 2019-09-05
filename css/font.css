@@ -1,0 +1,118 @@
+/*header*/
+
+header {
+	color: #fff;
+/*	height: 100px;
+*//*	border: 1px solid;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 25px;
+	font-family: "Kanit", sans-serif;
+}
+
+header .navigation .links {
+	display: flex;
+}
+
+header .navigation .links .main_link {
+	padding: 0px 14px;
+}
+
+.main_link a {
+	position: relative;
+}
+
+.number span {
+	font-family: "Arial", sans-serif;
+}
+
+/*font*/
+
+.font {
+	min-height: 600px; 
+	font-family: "Arial", sans-serif;
+	display: flex;
+	align-items: center;
+}
+
+.developer {
+	width: 710px;
+	display: block;
+	margin-bottom: 120px;
+}
+
+.profession {
+	font-size: 55px;
+	font-family: "Arial", sans-serif;
+	color: #04903D;
+}
+
+.name {
+	display: block;
+	font-size: 60px;
+}
+
+.description {
+	margin-top: 12px;
+	font-size: 25px;
+}
+
+#order {
+	padding: 22px 0;
+	font-size: 30px;
+	background: #0CDE60;
+	width: 402px;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 45px;
+	transition: 0.1s;
+}
+
+.comment {
+	font-family: "Kanit", sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 223px;
+}
+
+
+/*myface*/
+
+.myface  {
+	width: 590px;
+	overflow: hidden;
+	position: relative;
+}
+
+.myface img {
+	width: 600px;
+	transform: translateX(-50px);
+}
+
+/*  hover | active */
+
+#order:hover {
+	box-shadow: 0 0 50px 5px #0ADd00;
+	transition: 0.1s;
+	background-color: #0ADd00;
+	cursor: pointer;
+}
+
+	/*links*/
+
+.main_link a:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	bottom: 1px;
+	transition: 0.5s;
+}
+
+.main_link a:hover::before {
+	transition: 0.5s;
+	right: 0;
+	width: 100%;
+}

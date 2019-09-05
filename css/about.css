@@ -1,0 +1,49 @@
+/* about */
+
+.about {
+	margin-top: 100px;
+	font-size: 40px;
+	font-family: "Roboto", sans-serif;
+}
+
+.interview {
+	font-size: 40px;
+	margin-top: 55px;
+}
+
+.skills {
+	min-height: 600px;
+	padding-top: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.title_skills {
+	font-size: 50px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.box_spells {
+	width: 100%;
+}
+
+.spells {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: space-around;
+}
+
+.spell {
+	margin: 10px;
+}
+
+.spell_name {
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.percent {
+	font-size: 30px;
+}

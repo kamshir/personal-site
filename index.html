@@ -11,7 +11,8 @@
 	<script src="https://kit.fontawesome.com/4580e3c1b4.js"></script>
 </head>
 <body>
-<!-- 	----    FONT   ----		-->
+	<div class="startUp"><img src="img/portfolio/startUp.svg" alt=""></div>
+	<!-- ----    FONT   ----		-->
 
 	<!-- header -->
 	<header id="header">
@@ -20,8 +21,8 @@
 			<ul class="links">
 				<li class="main_link"><a href="#about">О себе</a></li>
 				<li class="main_link"><a href="#advantages">Преимущества</a></li>
-				<li class="main_link"><a href="#">Портфолио</a></li>
-				<li class="main_link"><a href="#">Контакты</a></li>
+				<li class="main_link"><a href="#portfolio">Портфолио</a></li>
+				<li class="main_link"><a href="#contacts">Контакты</a></li>
 			</ul>
 		</nav>
 		<span class="number">
@@ -64,32 +65,32 @@
 						<ul class="spells">
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-html5"></i>  HTML</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="90"></progress>
 								<span class="percent">85%</span>
 							</li>
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-css3-alt"></i>  CSS</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="80"></progress>
 								<span class="percent">85%</span>
 							</li>
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-js"></i>  Java Script</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="10"></progress>
 								<span class="percent">85%</span>
 							</li>
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-python"></i>  Python</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="10"></progress>
 								<span class="percent">85%</span>
 							</li>
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-adobe"></i>  Adobe Photoshop</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="10"></progress>
 								<span class="percent">85%</span>
 							</li>
 							<li class="spell">
 								<p class="spell_name"><i class="fab fa-figma"></i>  Figma</p>
-								<progress class="knowlege"></progress>
+								<progress class="knowlege" min="1" max="100" value="10"></progress>
 								<span class="percent">85%</span>
 							</li>
 						</ul>
@@ -137,16 +138,86 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</div> 
 
-	<!-- 	----    ABOUT   ----		-->
+	<!-- 	----    PORTFOLIO   ----		-->
 
 		<div class="portfolio">
 			<h2 id="portfolio" class="title">Портфолио</h2>
 
 			<div class="fiches_js">
 				<h3 class="mini_title">Фичи JS</h3>
+				<div class="buttons">
+					<div class="btn prev"><img src="img/portfolio/next.svg" alt=""></div>
+					<div class="slider">
+						<div class="block_fiches">
+							<div class="boxes_fiches">
+								<div class="fichBox">
+									<div class="screen">
+										<img src="img/portfolio/btn.gif" alt="">
+									</div>
+									<p>Кнопки</p>
+								</div>
+								<div class="fichBox">
+									<div class="screen">
+										<img src="img/portfolio/matrix.gif" alt="">
+									</div>
+									<p>Эффект цифр</p>
+								</div>
+								<div class="fichBox">
+									<div class="screen">
+										<img src="img/portfolio/thunder.gif" alt="">
+									</div>
+									<p>Фича Js</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn next"><img src="img/portfolio/prev.svg" alt=""></div>
+				</div>
 			</div>
+
+			<div class="fiches_js">
+					<h3 class="mini_title">Фичи CSS</h3>
+					<div class="buttons">
+						<div class="btn prev"><img src="img/portfolio/next.svg" alt=""></div>
+						<div class="slider">
+							<div class="block_fiches">
+								<div class="boxes_fiches">
+									<div class="fichBox">
+										<div class="screen">
+											<img src="img/portfolio/btn.gif" alt="">
+										</div>
+										<p>Кнопки</p>
+									</div>
+									<div class="fichBox">
+										<div class="screen">
+											<img src="img/portfolio/matrix.gif" alt="">
+										</div>
+										<p>Эффект цифр</p>
+									</div>
+									<div class="fichBox">
+										<div class="screen">
+											<img src="img/portfolio/thunder.gif" alt="">
+										</div>
+										<p>Фича Js</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn next"><img src="img/portfolio/prev.svg" alt=""></div>
+					</div>
+				</div>
+
+				<div class="projects_resource">
+					<h2 class="source_title">Ресурсы с проектами:</h2>
+					<ul class="icons">
+						<li class="source_list"><a href="" class="link_source"><img src="img/portfolio/fl.png" alt="fl"></a></li>
+						<li class="source_list"><a href="" class="link_source"><img src="img/portfolio/freehunt.png" alt="freeluncehunt"></a></li>
+						<li class="source_list"><a href="" class="link_source"><img src="img/portfolio/ps.png" alt="adobePS"></a></li>
+						<li class="source_list"><a href="https://kwork.ru/" class="link_source"><img src="img/portfolio/kwork.jpg" alt="kwork"></a></li>
+					</ul>
+				</div>
 		</div>
 	</main>
 
@@ -154,7 +225,8 @@
 
 
 	<!-- scripts -->
-
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

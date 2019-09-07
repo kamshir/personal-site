@@ -37,3 +37,14 @@ body {
 	align-items: center;
 	border: 2px dotted snow;
 }
+
+/* copy */
+
+.copy {
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 100;
+}

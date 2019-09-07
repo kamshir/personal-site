@@ -1,7 +1,8 @@
 (function() {
 
-    let variables = {
-        skiw:   0
+    const variables = {
+        skiw:   0,
+        percents: ['85', '80', '60', '55', '65', '70']
     }
 
 
@@ -66,4 +67,31 @@
     }
 
     window.addEventListener('scroll', progressBar);
+
+    const val_percents = document.querySelectorAll('.percent');
+    const spell_percents = document.querySelectorAll('.knowlege');
+    for (let i = 0; i < val_percents.length; i++) {
+        val_percents[i].textContent = variables.percents[i] + '%';
+        spell_percents[i].value = variables.percents[i];
+    }
+
+    const send = document.querySelector('.send');
+    send.onclick = function(e) {
+        e.preventDefault();
+    }
+
+    const wishes = document.querySelector('.wishes');
+    const count = document.querySelector('.count');
+
+    function counting() {
+        let symbols = wishes.value.length;
+        // let cnt = 0;
+        // for (let i = 0; i < symbols; i++) {
+        //     if (symbols[i] == '') continue;
+        //     cnt++;
+        // }
+        count.textContent = cnt + '/200';
+    }
+    wishes.addEventListener('keyup', counting);
+    wishes.addEventListener('keydown', counting);
 })();

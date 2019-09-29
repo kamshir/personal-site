@@ -17,7 +17,7 @@
 	border-radius: 12px;
 	height: 300px;
 	display: flex;
-	align-items: center
+	align-items: center;
 }
 
 .buttons .btn {
@@ -42,15 +42,16 @@
 	overflow-x: hidden;
 }
 
-.slider:hover {
-
+.buttons:hover .btn {
+	opacity: 1;
 }
 
 .block_fiches {
 	height: 100%;
 	transition: 0.5s;
 	padding: 5px;
-	width: 100%;
+	width: 2000px;
+	display: flex;
 }
 
 .boxes_fiches {
@@ -59,6 +60,10 @@
 	/* background-color: rgba(116, 116, 116, 0.185); */
 	display: flex;
 	align-items: center;
+}
+
+.boxes_fiches:hover .buttons {
+	opacity: 1;
 }
 
 .fichBox {

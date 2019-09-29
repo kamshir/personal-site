@@ -32,6 +32,7 @@
             variables.skiw += 100;
             block_fiches.style.transform = `translateX(${variables.skiw}%)`;
         }
+        console.log('click prev');
     }
     next.onclick = function() {
         if (variables.skiw == 0) {
@@ -41,11 +42,22 @@
             variables.skiw -= 100;
             block_fiches.style.transform = `translateX(${variables.skiw}%)`;
         }
+        console.log('click next');
     }
 
     // Плавный переход
     $('.main_link').on('click', 'a', function(e) {
         e.preventDefault();
+        let id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body, html').animate({scrollTop: top}, 1000);
+    });
+
+    $('.left_link').on('click', 'a', function(e) {
+        e.preventDefault();
+        $('.layer').toggleClass('chrest');
+        $('.left-menu').toggleClass('appear');
+        $('header, main, footer').toggleClass('saturate');
         let id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body, html').animate({scrollTop: top}, 1000);
@@ -89,4 +101,11 @@
     }
     wishes.addEventListener('keyup', counting);
     wishes.addEventListener('keydown', counting);
+
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', function() {
+        $('.layer').toggleClass('chrest');
+        $('.left-menu').toggleClass('appear').css('transition-duration', '0.7s');
+        $('header, main, footer').toggleClass('saturate');
+    });
 })();

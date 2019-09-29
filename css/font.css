@@ -30,32 +30,34 @@ header .navigation .links .main_link {
 /*font*/
 
 .font {
-	min-height: 600px; 
+	min-height: 300px; 
 	font-family: "Arial", sans-serif;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .developer {
 	width: 710px;
 	display: block;
-	margin-bottom: 120px;
+	padding-top: 100px;
 }
 
 .profession {
-	font-size: 55px;
+	font-size: 45px;
 	font-family: "Arial", sans-serif;
 	color: #04903D;
 }
 
 .name {
 	display: block;
-	font-size: 60px;
+	font-size: 30px;
 }
 
 .description {
 	margin-top: 12px;
-	font-size: 25px;
+	font-size: 20px;
+	width: 500px;
 }
 
 #order {
@@ -79,15 +81,16 @@ header .navigation .links .main_link {
 
 /*myface*/
 
-.myface  {
-	width: 590px;
-	overflow: hidden;
-	position: relative;
+.myface {
+	margin-top: -250px;
+	height: 300px;
+	width: 220px;
+	margin-right: 50px;
 }
 
 .myface img {
-	width: 600px;
-	transform: translateX(-50px);
+	width: inherit;
+	border: 2px solid #fff;
 }
 
 /*  hover | active */

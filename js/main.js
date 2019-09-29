@@ -85,11 +85,6 @@
 
     function counting() {
         let symbols = wishes.value.length;
-        // let cnt = 0;
-        // for (let i = 0; i < symbols; i++) {
-        //     if (symbols[i] == '') continue;
-        //     cnt++;
-        // }
         count.textContent = cnt + '/200';
     }
     wishes.addEventListener('keyup', counting);
